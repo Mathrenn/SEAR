@@ -1,9 +1,4 @@
----
-title: SEAR - Sistema Esperto per l'Anamnesi del Ritardo nello sviluppo del bambino
-author:
-- Carulli Antonio Matteo
-- Università degli Studi di Bari
----
+# SEAR - Sistema Esperto per l'Anamnesi del Ritardo nello sviluppo del bambino
 
 ## Introduzione e a chi è destinato
 
@@ -19,11 +14,7 @@ In SEAR, ogni fatto asserito è una tripla **OAV** (Oggetto, Attributo, Valore) 
 
 Se in un qualsiasi momento sono presenti due OAV identici, ma con CF diversi, la regola **combina-certainty-factor** li unisce in un unico fatto con un nuovo CF calcolato secondo la formula del sistema esperto MYCIN:
 
-$\begin{cases}
-X+Y-XY & \quad\text{se } X,Y>0 \\
-X+Y+XY & \quad \text{se } X,Y<0 \\
-\frac{X+Y}{1-min( X,Y )} & \quad \text{se } XY<0
-\end{cases}$
+![equation:](cfeq.jpg)
 
 ## Formato Regole
 
